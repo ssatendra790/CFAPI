@@ -13,20 +13,24 @@ const Header = () => {
             </div>
         </div>
       
-        <div className='flex flex-row border border-gray-950 p-1 rounded-sm mt-4 mx-4 text-base'>
-            <button className='p-3 fnot'>HOME</button>
-            <button className='p-3'>TOP</button>
-            <button className='p-3'>CATALOG</button>
-            <button className='p-3'>GYM</button>
-            <button className='p-3'>PROBLEMSET</button>
-            <button className='p-3'>GROUPS</button>
-            <button className='p-3'>RATING</button>
-            <button className='p-3'>EDU</button>
-            <button className='p-3'>API</button>
-            <button className='p-3'>CALENDAR</button>
-            <button className='p-3'>HELP</button>
-            <button className='p-3'>ICPC CHALLENGE</button>
-            {/* <input type="search" placeholder='Search' className='bg-[#5e5e5e] w-28 rounded-md px-5 text-white'></input> */}
+        <div className=' flex flex-row border border-gray-950 rounded-sm mt-4 mx-4 text-base justify-between'>
+          <div className=''>
+            <button className='px-1 md:px-2'>HOME</button>
+            <button className='px-1 md:px-2'>TOP</button>
+            <button className='px-1 md:px-2'>CATALOG</button>
+            <button className='px-1 md:px-2'>GYM</button>
+            <button className='px-1 md:px-2'>PROBLEMSET</button>
+            <button className='px-1 md:px-2'>GROUPS</button>
+            <button className='px-1 md:px-2'>RATING</button>
+            <button className='px-1 md:px-2'>EDU</button>
+            <button className='px-1 md:px-2'>API</button>
+            <button className='px-1 md:px-2'>CALENDAR</button>
+            <button className='px-1 md:px-2'>HELP</button>
+            <button className='px-1 md:px-2'>ICPC CHALLENGE</button>
+          </div>
+          <div>
+            <input type="search" placeholder='Search' className='bg-[#ffffff] w-28 rounded-md px-4 text-white border border-gray-700'/>
+          </div>
         </div>
       
     </div>

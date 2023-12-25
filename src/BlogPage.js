@@ -4,8 +4,11 @@ import Header from './Header';
 
 
 const BlogPage = () => {
+
     const [data, setData] = useState(null);
+
     useEffect(()=>{
+        
         const fetchData = async()=>{
             try{
                 const response = await axios.get('https://codeforces.com/api/blogEntry.view?blogEntryId=900');
@@ -21,10 +24,13 @@ const BlogPage = () => {
     <div className='text-gray-900 h-screen'>
         <Header/>
       {data && ( 
-        <div> 
-            <div className='flex flex-col justify-center items-center mt-10'>
-                <h1 className='text-xl'>{data.title}</h1>
-                <p>Author: {data.authorHandle} </p>
+        <div className='p-8'> 
+            <div className='flex flex-col mt-10'>
+                <div>
+                    <h1 className='text-xl'>{data.title}</h1>
+                    <p>Author: {data.authorHandle} </p>
+                    <p>Rating: {data.rating}</p>
+                </div>
             </div>
         </div> )}
     </div>
